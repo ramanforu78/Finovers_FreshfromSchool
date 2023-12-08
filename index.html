@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Gold Questionnaire</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f9f5e1; /* Light beige background */
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #ffee00; /* Gold color */
+            color: #000000;
+        }
+
+        .survey-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #d4af37; /* Gold border */
+            border-radius: 6px;
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #d4af37; /* Gold color */
+            color: #000000;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #fff200; /* Darker gold on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>India Gold Surveys</h1>
+        <h2>By Fresh from School</h2>
+    </header>
+
+    <div class="survey-container">
+        <h2>Survey 1: For Old Users</h2>
+        <form action="#" method="post">
+            <!-- General Information -->
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email ID:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="tenure">How long have you been a customer of indiagold?</label>
+<select id="tenure" name="tenure">
+    <option value="less_than_6_months">Less than 6 months</option>
+    <option value="6_months_to_1_year">6 months to 1 year</option>
+    <option value="1_to_2_years">1 to 2 years</option>
+    <option value="more_than_2_years">More than 2 years</option>
+</select>
+
+<!-- Online Gold Loan Usage -->
+<label for="loan_frequency">How many times have you used our online gold loan service?</label>
+<select id="loan_frequency" name="loan_frequency">
+    <option value="once">Once</option>
+    <option value="2_3_times">2-3 times</option>
+    <option value="4_5_times">4-5 times</option>
+    <option value="more_than_5_times">More than 5 times</option>
+</select>
+
+<label for="loan_reason">What is your primary reason for using online gold loan services?</label>
+<select id="loan_reason" name="loan_reason">
+    <option value="emergency_needs">To meet emergency financial needs</option>
+    <option value="major_purchase">To finance a major purchase</option>
+    <option value="business_expenses">To cover business expenses</option>
+    <option value="other">Other</option>
+</select>
+
+<label for="gold_types">What types of gold have you pledged for a loan?</label>
+<input type="checkbox" id="gold_jewelry" name="gold_types" value="jewelry">
+<label for="gold_jewelry">Gold jewelry</label>
+<input type="checkbox" id="gold_bars" name="gold_types" value="bars">
+<label for="gold_bars">Gold bars</label>
+<input type="checkbox" id="gold_coins" name="gold_types" value="coins">
+<label for="gold_coins">Gold coins</label>
+<input type="checkbox" id="gold_other" name="gold_types" value="other">
+<label for="gold_other">Other (Please specify)</label>
+<input type="text" id="gold_other_specify" name="gold_other_specify">
+
+<label for="loan_amount">What is the average loan amount you typically borrow?</label>
+<select id="loan_amount" name="loan_amount">
+    <option value="less_than_1_lakh">Less than ₹1 lakh</option>
+    <option value="1_lakh_to_5_lakhs">₹1 lakh to ₹5 lakhs</option>
+    <option value="5_lakhs_to_10_lakhs">₹5 lakhs to ₹10 lakhs</option>
+    <option value="more_than_10_lakhs">More than ₹10 lakhs</option>
+</select>
+
+<!-- Service Satisfaction -->
+<label for="satisfaction">How satisfied are you with the overall online gold loan process?</label>
+<select id="satisfaction" name="satisfaction">
+    <option value="very_satisfied">Very satisfied</option>
+    <option value="satisfied">Satisfied</option>
+    <option value="neutral">Neutral</option>
+    <option value="dissatisfied">Dissatisfied</option>
+    <option value="very_dissatisfied">Very dissatisfied</option>
+</select>
+
+<label for="apply_difficulty">How easy was it to apply for a loan online?</label>
+<select id="apply_difficulty" name="apply_difficulty">
+    <option value="very_easy">Very easy</option>
+    <option value="easy">Easy</option>
+    <option value="somewhat_difficult">Somewhat difficult</option>
+    <option value="difficult">Difficult</option>
+    <option value="very_difficult">Very difficult</option>
+</select>
+
+<label for="resources_helpful">How helpful and informative were our online resources and FAQs?</label>
+<select id="resources_helpful" name="resources_helpful">
+    <option value="very_helpful">Very helpful and informative</option>
+    <option value="helpful">Helpful and informative</option>
+    <option value="somewhat_helpful">Somewhat helpful and informative</option>
+    <option value="not_helpful">Not helpful or informative</option>
+    <option value="very_unhelpful">Very unhelpful and confusing</option>
+</select>
+
+<label for="approval_speed">How satisfied are you with the speed of loan approval and disbursement?</label>
+<select id="approval_speed" name="approval_speed">
+    <option value="very_satisfied">Very satisfied</option>
+    <option value="satisfied">Satisfied</option>
+    <option value="neutral">Neutral</option>
+    <option value="dissatisfied">Dissatisfied</option>
+    <option value="very_dissatisfied">Very dissatisfied</option>
+</select>
+
+<label for="repay_difficulty">How easy was it to repay your loan and retrieve your pledged gold?</label>
+<select id="repay_difficulty" name="repay_difficulty">
+    <option value="very_easy">Very easy</option>
+    <option value="easy">Easy</option>
+    <option value="somewhat_difficult">Somewhat difficult</option>
+    <option value="difficult">Difficult</option>
+    <option value="very_difficult">Very difficult</option>
+</select>
+
+<!-- Fees and Charges -->
+<label for="fees_satisfaction">How satisfied are you with the interest rates and fees charged on our gold loans?</label>
+<select id="fees_satisfaction" name="fees_satisfaction">
+    <option value="very_satisfied">Very satisfied</option>
+    <option value="satisfied">Satisfied</option>
+    <option value="neutral">Neutral</option>
+    <option value="dissatisfied">Dissatisfied</option>
+    <option value="very_dissatisfied">Very dissatisfied</option>
+</select>
+
+<label for="fees_transparency">Do you feel the fees are transparent and easy to understand?</label>
+<select id="fees_transparency" name="fees_transparency">
+    <option value="yes">Yes</option>
+    <option value="somewhat">Somewhat</option>
+    <option value="no">No</option>
+</select>
+
+<label for="transaction_security">What are your thoughts on the security of our online transactions?</label>
+<select id="transaction_security" name="transaction_security">
+    <option value="very_secure">Very secure</option>
+    <option value="secure">Secure</option>
+    <option value="somewhat_secure">Somewhat secure</option>
+    <option value="not_secure">Not secure</option>
+    <option value="very_insecure">Very insecure</option>
+</select>
+
+<label for="premium_payment">Would you be willing to pay a premium for additional features or faster loan processing?</label>
+<select id="premium_payment" name="premium_payment">
+    <option value="yes_definitely">Yes, definitely</option>
+    <option value="yes_possibly">Yes, possibly</option>
+    <option value="no_probably_not">No, probably not</option>
+    <option value="no_definitely_not">No, definitely not</option>
+</select>
+
+<!-- Future Usage -->
+<label for="future_usage">How likely are you to use our online gold loan service again in the future?</label>
+<select id="future_usage" name="future_usage">
+    <option value="very_likely">Very likely</option>
+    <option value="likely">Likely</option>
+    <option value="neutral">Neutral</option>
+    <option value="unlikely">Unlikely</option>
+    <option value="very_unlikely">Very unlikely</option>
+</select>
+
+<label for="encouraging_factors">What would encourage you to use our service more often?</label>
+<select id="encouraging_factors" name="encouraging_factors">
+    <option value="lower_interest_rates">Lower interest rates</option>
+    <option value="faster_processing">Faster loan processing</option>
+    <option value="flexible_repayment_options">More flexible repayment options</option>
+    <option value="additional_features">Additional features and services</option>
+    <option value="other_encouraging_factors">Other (Please specify)</option>
+</select>
+<input type="text" id="other_encouraging_factors_specify" name="other_encouraging_factors_specify">
+
+<label for="recommend_service">Would you recommend our service to friends and family?</label>
+<select id="recommend_service" name="recommend_service">
+    <option value="definitely">Definitely</option>
+    <option value="probably">Probably</option>
+    <option value="maybe">Maybe</option>
+    <option value="probably_not">Probably not</option>
+    <option value="definitely_not">Definitely not</option>
+</select>
+
+<!-- Subjective Questions -->
+<label for="additional_services">What additional services would you like us to offer?</label>
+<textarea id="additional_services" name="additional_services" rows="4"></textarea>
+
+<label for="improvement_suggestions">What could have been done to improve your overall experience?</label>
+<textarea id="improvement_suggestions" name="improvement_suggestions" rows="4"></textarea>
+
+<label for="advantages_disadvantages">In your opinion, what are the biggest advantages and disadvantages of using our online gold loan service compared to traditional gold loan providers?</label>
+<textarea id="advantages_disadvantages" name="advantages_disadvantages" rows="4"></textarea>
+
+<label for="ideal_experience">Describe your ideal online gold loan experience. What features and functionalities would make it the best service available?</label>
+<textarea id="ideal_experience" name="ideal_experience" rows="4"></textarea>
+<br>
+<!-- Submit Button -->
+<button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="survey-container">
+            <h2>Survey 2 : For New Users </h2>
+            <form action="#" method="post">
+    
+                <!-- Demographics -->
+                <label for="age">1. Age:</label>
+                <select id="age" name="age">
+                    <option value="18_24">18-24</option>
+                    <option value="25_34">25-34</option>
+                    <option value="35_44">35-44</option>
+                    <option value="45_54">45-54</option>
+                    <option value="55_plus">55+</option>
+                </select>
+    
+                <label for="gender">2. Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+    
+                <label for="occupation">3. Occupation:</label>
+                <select id="occupation" name="occupation">
+                    <option value="salaried">Salaried</option>
+                    <option value="self_employed">Self-Employed</option>
+                    <option value="business_owner">Business Owner</option>
+                    <option value="student">Student</option>
+                    <option value="homemaker">Homemaker</option>
+                    <option value="other_occupation">Other</option>
+                </select>
+                <input type="text" id="other_occupation_specify" name="other_occupation_specify">
+    
+                <label for="annual_income">4. Annual Income:</label>
+                <select id="annual_income" name="annual_income">
+                    <option value="below_100000">Below 1,00,000</option>
+                    <option value="100000_1000000">₹100,000-₹10,00,000</option>
+                    <option value="1000000_2000000">₹10,00,000-20,00,000</option>
+                    <option value="above_2000000">Above ₹20,00,000</option>
+                </select>
+    
+                <label for="dependents">5. How many dependents do you have?</label>
+                <select id="dependents" name="dependents">
+                    <option value="none">None</option>
+                    <option value="1_2">1-2</option>
+                    <option value="3_4">3-4</option>
+                    <option value="5_6">5-6</option>
+                    <option value="more_than_6">More than 6</option>
+                </select>
+    
+                <label for="gold_value">6. What is the total value of your gold holdings?</label>
+                <select id="gold_value" name="gold_value">
+                    <option value="less_than_100000">Less than 100,000</option>
+                    <option value="100000_200000">100,000-200,000</option>
+                    <option value="200000_300000">200,000-300,000</option>
+                    <option value="more_than_300000">More than 300,000</option>
+                </select>
+    
+                <!-- Digitalization Preferences -->
+                <label for="online_transactions">7. How comfortable are you with online transactions?</label>
+                <select id="online_transactions" name="online_transactions">
+                    <option value="very_comfortable">Very comfortable</option>
+                    <option value="somewhat_comfortable">Somewhat comfortable</option>
+                    <option value="not_comfortable">Not comfortable at all</option>
+                </select>
+    
+                <label for="online_loan_features">8. What features would you like to see in an online gold loan platform?</label>
+                <input type="checkbox" id="loan_eligibility_check" name="online_loan_features" value="loan_eligibility_check">
+                <label for="loan_eligibility_check">Loan eligibility check</label>
+                <input type="checkbox" id="gold_valuation" name="online_loan_features" value="gold_valuation">
+                <label for="gold_valuation">Online gold valuation</label>
+                <input type="checkbox" id="e_document_verification" name="online_loan_features" value="e_document_verification">
+                <label for="e_document_verification">E-document verification</label>
+                <input type="checkbox" id="online_loan_application" name="online_loan_features" value="online_loan_application">
+                <label for="online_loan_application">Online loan application</label>
+                <input type="checkbox" id="digital_gold_locker" name="online_loan_features" value="digital_gold_locker">
+                <label for="digital_gold_locker">Digital gold locker</label>
+                <input type="checkbox" id="online_loan_repayment" name="online_loan_features" value="online_loan_repayment">
+                <label for="online_loan_repayment">Online loan repayment</label>
+                <input type="checkbox" id="other_online_features" name="online_loan_features" value="other">
+                <label for="other_online_features">Other</label>
+                <input type="text" id="other_online_features_specify" name="other_online_features_specify">
+    
+                <label for="pay_for_service">9. How much are you willing to pay for a convenient and secure online gold loan service?</label>
+                <input type="text" id="pay_for_service" name="pay_for_service">
+    
+                <label for="switch_motivation">10. What would motivate you to switch to a digital gold loan platform?</label>
+                <input type="checkbox" id="lower_interest_rates" name="switch_motivation" value="lower_interest_rates">
+                <label for="lower_interest_rates">Lower interest rates</label>
+                <input type="checkbox" id="faster_loan_process" name="switch_motivation" value="faster_loan_process">
+                <label for="faster_loan_process">Faster loan process</label>
+                <input type="checkbox" id="convenience" name="switch_motivation" value="convenience">
+                <label for="convenience">Convenience</label>
+                <input type="checkbox" id="better_customer_service" name="switch_motivation" value="better_customer_service">
+                <label for="better_customer_service">Better customer service</label>
+                <input type="checkbox" id="other_switch_motivation" name="switch_motivation" value="other">
+                <label for="other_switch_motivation">Other</label>
+                <input type="text" id="other_switch_motivation_specify" name="other_switch_motivation_specify">
+    
+                <label for="trust_online_platform">11. Would you trust an online platform for availing gold loan services?</label>
+                <select id="trust_online_platform" name="trust_online_platform">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+    
+                <!-- General Credit Facilities -->
+                <label for="credit_modes">12. What are the modes of credit you generally prefer?</label>
+                <input type="checkbox" id="friends_family" name="credit_modes" value="friends_family">
+                <label for="friends_family">Friends and family</label>
+                <input type="checkbox" id="moneylender" name="credit_modes" value="moneylender">
+                <label for="moneylender">Moneylender</label>
+                <input type="checkbox" id="nbfc" name="credit_modes" value="nbfc">
+                <label for="nbfc">NBFCs</label>
+                <input type="checkbox" id="public_banks" name="credit_modes" value="public_banks">
+                <label for="public_banks">Public Banks</label>
+                <input type="checkbox" id="private_banks" name="credit_modes" value="private_banks">
+                <label for="private_banks">Private Banks</label>
+                <input type="checkbox" id="buy_now_pay_later" name="credit_modes" value="buy_now_pay_later">
+                <label for="buy_now_pay_later">Buy now pay later</label>
+                <input type="checkbox" id="credit_cards" name="credit_modes" value="credit_cards">
+                <label for="credit_cards">Credit Cards</label>
+                <input type="checkbox" id="upi_apps" name="credit_modes" value="upi_apps">
+                <label for="upi_apps">UPI apps- BharatPe, Paytm etc</label>
+                <input type="checkbox" id="gold_loan" name="credit_modes" value="gold_loan">
+                <label for="gold_loan">Gold loan</label>
+                <input type="checkbox" id="shgs" name="credit_modes" value="shgs">
+                <label for="shgs">SHGs</label>
+                <input type="checkbox" id="credit_unions" name="credit_modes" value="credit_unions">
+                <label for="credit_unions">Credit Unions</label>
+                <input type="checkbox" id="other_credit_modes" name="credit_modes" value="other">
+                <label for="other_credit_modes">Others</label>
+                <input type="text" id="other_credit_modes_specify" name="other_credit_modes_specify">
+    
+                <label for="loan_interest_rate">13. If you’ve ever taken any loan, what was the annual interest rate?</label>
+                <select id="loan_interest_rate" name="loan_interest_rate">
+                    <option value="below_5_percent">Lower than 5%</option>
+                    <option value="5_8_percent">5-8% p.a</option>
+                    <option value="9_12_percent">9-12%p.a</option>
+                    <option value="13_16_percent">13-16%p.a</option>
+                    <option value="18_20_percent">18-20%</option>
+                    <option value="higher_than_20_percent">Higher than 20%</option>
+                </select>
+    
+                <!-- Gold Loan Experience -->
+                <label for="availed_gold_loan">14. Have you ever availed a gold loan?</label>
+                <select id="availed_gold_loan" name="availed_gold_loan">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+    
+                <label for="last_avail_date">15. When did you last avail a gold loan?</label>
+                <input type="date" id="last_avail_date" name="last_avail_date">
+    
+                <label for="loan_platform">16. Which platform did you use to avail the gold loan?</label>
+                <select id="loan_platform" name="loan_platform">
+                    <option value="bank">Bank</option>
+                    <option value="gold_loan_company">Gold Loan Company</option>
+                    <option value="online_platform">Online platform</option>
+                    <option value="other_loan_platform">Other</option>
+                </select>
+                <input type="text" id="other_loan_platform_specify" name="other_loan_platform_specify">
+    
+                <label for="platform_choice_reason">17. Why did you choose this platform?</label>
+                <textarea id="platform_choice_reason" name="platform_choice_reason" rows="4"></textarea>
+    
+                <label for="interest_rate">18. What was the per month interest rate?</label>
+                <input type="text" id="interest_rate" name="interest_rate">
+    
+                <label for="loan_purpose">19. What was the primary reason for availing the gold loan?</label>
+                <select id="loan_purpose" name="loan_purpose">
+                    <option value="medical_emergency">Medical emergency</option>
+                    <option value="business_needs">Business needs</option>
+                    <option value="education_fees">Education fees</option>
+                    <option value="personal_needs">Personal needs</option>
+                    <option value="other_loan_purpose">Other</option>
+                </select>
+                <input type="text" id="other_loan_purpose_specify" name="other_loan_purpose_specify">
+    
+                <label for="loan_experience_satisfaction">20. How satisfied were you with the overall gold loan experience?</label>
+                <select id="loan_experience_satisfaction" name="loan_experience_satisfaction">
+                    <option value="very_satisfied">Very satisfied</option>
+                    <option value="somewhat_satisfied">Somewhat satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="somewhat_dissatisfied">Somewhat dissatisfied</option>
+                    <option value="very_dissatisfied">Very dissatisfied</option>
+                </select>
+    
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
